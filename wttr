@@ -1,0 +1,19 @@
+#!/bin/bash
+
+CURL=$(which curl)
+LOCATION=$1
+LANG=$2
+
+LANGUAGES=(az bs ca cy de en eo fr he hr hy id is it ja kk lv mk nb nn ru sl tr uz)
+
+if [[ " ${LANGUAGES[*]} " == *"$LANG"* ]];
+then
+
+        $CURL wttr.in/$LOCATION?lang=$LANG
+
+else
+
+        echo "Your language is not available, please choose one of the following:"
+        echo ${LANGUAGES[*]}
+
+fi
