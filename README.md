@@ -11,7 +11,7 @@ Script to check the weather via wttr.in
 
 ***Execute:***
 
-Syntax wttr <location> <lang>
+```wttr <location> <lang>```
 
 ```wttr karlsruhe de```
 
